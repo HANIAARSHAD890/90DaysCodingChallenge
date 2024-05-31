@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Travel form</h1>
+      <form action="form.php"></form>
+    </div>
+    <input type="text" placeholder="enter your name " /><br />
+    <!-- for the raduo button to work coerrectly just use uunique ids and name must be same  -->
+    <label for="sectionida">
+      <input
+        type="radio"
+        placeholder="enter your section"
+        value="sectionA"
+        name="Section"
+        id="sectionida"
+      />SectionA</label
+    >
+    <label for="sectionidb">
+      <input
+        type="radio"
+        placeholder="enter your section"
+        value="sectionB"
+        name="Section"
+        id="sectionidb"
+      />SectionB</label
+    ><br />
+    <input type="checkbox" name="Active" id="isActive" />
+    <label for="isActive">IsActive </label><br />
+    <textarea
+      name="Joining"
+      id="explain"
+      cols="30"
+      rows="10"
+      placeholder="Why you want to join"
+      name="explain"
+    ></textarea
+    ><br />
+    <select name="vehicle" id="vehicle">
+      <option value="no car">Select your car</option>
+      <option value="car1">car1</option>
+      <option value="car2">car2</option>
+      <option value="car3">car3</option>
+    </select>
+  </body>
+</html>
