@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudoselectors</title>
+    <style>
+      .container {
+        border: 5px solid rgb(200, 220, 170);
+        background-color: rgb(157, 219, 219);
+        padding: 34px;
+        margin: 10px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        color: aliceblue;
+        background-color: aqua;
+        border: solid orange 8px;
+      }
+      a:visited {
+        color: yellow;
+      }
+      a:active {
+        background-color: blue;
+      }
+      .btn {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: rgb(230, 168, 168);
+        padding: 6px;
+        border: none;
+        cursor: pointer;
+        font-size: 13px;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <h3>This is heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In illo quo
+          esse necessitatibus nihil suscipit tempore cupiditate consequuntur
+          dolores commodi atque et provident reprehenderit dolorum iusto,
+          repellat a laborum nemo? Incidunt voluptatum facere doloribus!
+          <a href="https://www.google.com" class="btn">Readmore</a>
+          <button class="btn">Contact us</button>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

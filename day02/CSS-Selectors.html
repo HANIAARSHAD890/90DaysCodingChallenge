@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS selectors</title>
+    <style>
+      /* idselector */
+      /* #red{
+            color:red
+        }
+        .blue{
+            color:blue
+        }
+        .red{
+            background-color:red
+        } */
+      /* grouping */
+      header,
+      footer {
+        background-color: aqua;
+      }
+      /* element selector */
+      p {
+        border: 5px solid rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>CSS selectors</h1></header>
+    <main>
+      <p id="red">this is first paragraph</p>
+      <div>
+        <p class="blue red">gis bsi second paragraph</p>
+      </div>
+    </main>
+    <footer><p>this is footer</p></footer>
+  </body>
+  <!-- here inline css ..withinline
+internal   style tag ko use 
+exyernal    separate file ko  -->
+</html>
