@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hania Fitness</title>
+    <style>
+      /* CSS Reset */
+      body {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("/img/gym1.jpeg");
+      }
+      .left {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: 34px;
+      }
+      .right {
+        position: absolute;
+        top: 18px;
+        right: 34px;
+
+        display: inline-block;
+      }
+      .mid {
+        display: block;
+        margin: 14px auto;
+        width: 50%;
+      }
+
+      .navbar li {
+        display: inline-block;
+        font-size: 25px;
+      }
+      .navbar a {
+        text-decoration: none;
+        padding: 34px 5px;
+      }
+      .navbar a:hover {
+        text-decoration: underline;
+        color: rgb(141, 141, 217);
+      }
+      .left img {
+        width: 116px;
+        filter: invert(100%);
+      }
+      .left p {
+        text-align: center;
+        line-height: 0px;
+        font-size: 20x;
+      }
+      .btn {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        padding: 6px;
+        margin-top: 3px;
+        width: 80px;
+        background-color: black;
+        color: aliceblue;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .right button:hover {
+        background-color: rgb(99, 94, 94);
+      }
+      .container button:hover {
+        background-color: rgb(99, 94, 94);
+      }
+      .container {
+        border: 2px solid green;
+        display: block;
+        margin-top: 40px;
+        margin-left: 33%;
+        border-radius: 25px;
+        width: 34%;
+        padding: 45px;
+      }
+      .container input {
+        width: 70%;
+        border-radius: 17px;
+        margin: auto;
+
+        padding: 10px;
+        margin: 3px;
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .container button {
+        display: block;
+        align-items: center;
+        width: 30%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="/img/logo.png" alt="" />
+        <p>Hania Fitness</p>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Fitness Calendar</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">CallUs</button> <button class="btn">Email</button>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Join best Gym</h1>
+        <form action="noaction.php">
+          <label for="Name">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            type="text"
+            id="Name"
+            placeholder="Write your name"
+          /><br />
+          <label for="Name">Age</label
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            type="text"
+            id="Name"
+            placeholder="Write your age"
+          /><br />
+          <label for="Name">Gender</label>&nbsp;&nbsp;&nbsp;<input
+            type="text"
+            id="Name"
+            placeholder="Write your gender"
+          /><br />
+          <label for="Name">Locality</label>&nbsp;&nbsp;<input
+            type="text"
+            id="Name"
+            placeholder="Write your locality"
+          /><br />
+          <button class="btn">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
