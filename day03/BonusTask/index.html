@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrandWebsite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      header {
+        color: white;
+        background-image: url(imgs/whiteman.png);
+        height: 80vh;
+        width: 100vw;
+        font-size: large;
+      }
+      header h1,
+      h2,
+      h5 {
+        text-align: center;
+      }
+      .navbar {
+        display: flex;
+        font-size: small;
+        margin: 3px 3px 3px 400px;
+      }
+      .navitems {
+        padding: 6px;
+      }
+
+      .primaryheading {
+        margin: 2px 2px 2px 450px;
+        display: flex;
+        padding: 2px;
+        font-size: 50px;
+      }
+      .primaryheading div {
+        padding: 2px;
+      }
+      .bold h1 {
+        text-align: center;
+      }
+
+      .navitems:hover {
+        color: tomato;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+      }
+      .primaryheading-2 {
+        font-family: "Dancing Script", "cursive";
+        font-optical-sizing: auto;
+        font-weight: 45;
+        font-style: normal;
+        color: rgb(208, 92, 71);
+      }
+      .primaryheading-1,
+      .primaryheading-3 {
+        font-family: "Archivo Black", "sans-serif";
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(71, 63, 63);
+      }
+      header h2 {
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 5;
+        font-style: normal;
+        background-color: rgb(71, 63, 63);
+      }
+      .headings {
+        margin-top: 50px;
+        padding: 6px;
+      }
+      #orangecolor {
+        color: rgb(208, 92, 71);
+      }
+      .middle {
+        display: flex;
+
+        /* padding-top: 50px; */
+        width: 100vw;
+        color: white;
+      }
+      .middleHead {
+        text-align: center;
+        background-color: rgb(96, 92, 92);
+        padding: 70px;
+        /* margin:3px; */
+        width: 500px;
+        transition: all 0.5s ease-in-out;
+        /* height:60px; */
+      }
+      .middleHead:hover {
+        color: black;
+        cursor: pointer;
+      }
+      #middle-4 {
+        background-color: rgb(208, 92, 71);
+        position: relative;
+      }
+      #middle-4:hover {
+        background-color: rgb(96, 92, 92);
+      }
+      .middleunder {
+        height: 500px;
+        width: 100vw;
+        background-color: rgb(202, 213, 223);
+        display: flex;
+      }
+      .middleu {
+        align-self: center;
+        text-align: center;
+        font-size: medium;
+        margin: 14px;
+        margin-top: 5px;
+        width: 50vw;
+      }
+      .middleu p {
+        margin-top: 6px;
+        padding-bottom: 13px;
+      }
+      #chat-btn {
+        width: 130px;
+        height: 50px;
+        margin-left: 30px;
+        float: left;
+        background-color: rgb(208, 92, 71);
+        transition: all 0.5s ease-in-out;
+        color: white;
+        border: none;
+        border-radius: 3px;
+      }
+      #chat-btn:hover {
+        background-color: rgb(96, 92, 92);
+        color: black;
+      }
+      #middleu-2 img {
+        width: 40vw;
+        box-shadow: 5px 5px 5px black;
+        margin: 13px 5px 5px 5px;
+        border: 2px solid tomato;
+      }
+      #middleu-1 h1 {
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 5;
+        font-style: normal;
+      }
+      .container {
+        background-color: rgb(96, 92, 92);
+        color: white;
+        width: 100vw;
+        height: 50vh;
+        text-align: center;
+        align-items: center;
+      }
+      .container h1 {
+        font-optical-sizing: auto;
+        font-weight: 45;
+        font-style: normal;
+        color: rgb(208, 92, 71);
+      }
+      .footer {
+        padding-top: 35px;
+        margin: 0px 50px 0px 50px;
+      }
+      .icons {
+        display: flex;
+        display: inline;
+        padding: 6px;
+      }
+      .icons img {
+        width: 30px;
+        padding: 4px;
+        float: right;
+        transition: all 0.5s ease-in-out;
+      }
+      .icons img:hover {
+        transform: scale(2);
+        cursor: pointer;
+      }
+      #pin {
+        width: 25px;
+        margin-bottom: 1.8px;
+      }
+      #icons-1,
+      #icons-2 {
+        float: left;
+      }
+      #icons-2 {
+        color: tomato;
+        text-decoration: underline;
+      }
+      #icons-2:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navitems" id="navitems-1">HOME</div>
+        <div class="navitems" id="navitems-2">ABOUT US</div>
+        <div class="navitems" id="navitems-3">BRAND ID AND WEB DESIGN</div>
+        <div class="navitems" id="navitems-4">BUISNESS SUPPORT</div>
+        <div class="navitems" id="navitems-5">DIGITAL PRODUCT</div>
+        <div class="navitems" id="navitems-6">CONTACT</div>
+        <div class="navitems" id="navitems-7">BRAND PHOTOGRAPHY</div>
+        <div class="navitems" id="navitems-8">
+          <img src="imgs/cart.png" alt="" width="30px" />
+        </div>
+      </nav>
+      <br /><br /><br /><br /><br />
+      <div class="headings">
+        <div class="primaryheading">
+          <div class="primaryheading-1">BIRDS</div>
+          <div class="primaryheading-2">fly</div>
+          <div class="primaryheading-3">FREE</div>
+        </div>
+
+        <h2>Elevate your brand | design your success</h2>
+        <h5>Welcome to Birds Fly Free</h5>
+        <h1 id="orangecolor">
+          CAPTURING THE<br />
+          ESSENCE OF <br />YOUR BRAND
+        </h1>
+      </div>
+    </header>
+    <main>
+      <div class="middle">
+        <div class="middleHead" id="middle-1">
+          PERSONAL BRAND<br />PHOTOGRAPHY
+        </div>
+        <div class="middleHead" id="middle-2">LOGO & WEB DESIGN</div>
+        <div class="middleHead" id="middle-3">
+          HOW TO MAKE SALES <br />ONLINE
+        </div>
+        <div class="middleHead" id="middle-4"><p>CHAT WITH LOUISE</p></div>
+      </div>
+      <div class="middleunder">
+        <div class="middleu" id="middleu-1">
+          <h1>
+            WELCOME TO <br />BIRDS FLY <br />
+            FREE
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nulla
+            adipisci assumenda at, accusantium aperiam temporibus sint veniam
+            reiciendis laborum accusamus vitae fugiat deserunt dignissimos
+            officiis sit ad blanditiis quia velit! Quam, suscipit harum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+            placeat repellat beatae rem nisi blanditiis dignissimos aperiam,
+            sequi aut quia pariatur illum error a iste commodi rerum dolores
+            optio assumenda facilis accusantium provident similique?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
+            voluptates inventore quis quibusdam deleniti voluptatem neque
+            perspiciatis reprehenderit quaerat, rerum eius possimus, error at
+            ducimus minima labore laboriosam similique iusto eveniet mollitia
+            ullam. Consequuntur.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi iste
+            voluptatibus quidem. Nostrum itaque cupiditate ducimus at! Est,
+            blanditiis veritatis. Aliquam earum ipsa accusantium obcaecati,
+            repudiandae, voluptatem distinctio fugiat sapiente veniam
+            consectetur doloremque tempore?
+          </p>
+          <button id="chat-btn">CHAT WITH LOUSIE</button>
+        </div>
+        <div class="middleu" id="middleu-2">
+          <img src="imgs/men4.jpg" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer" id="footeritem-1">
+          <h1>
+            BIRDS FLY FREE IS PROFOUNDLY <br />SUPPORTIVE AND FIERCELY INCLUSIVE
+            <br />
+            OF ALL HUMANS
+          </h1>
+          <br /><br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum rem
+            quia numquam hic cumque. Consequatur consequuntur temporibus
+            accusamus reprehenderit molestiae voluptatibus tempore vero
+            consectetur minima quidem, aspernatur nisi qui adipisci dolor quam
+            praesentium laudantium?
+          </p>
+        </div>
+        <div class="footer" id="footeritem-2">
+          <div class="icons" id="icons-1">@birdsflyfree 2024</div>
+          <div class="icons" id="icons-2">PrivacyPolicy</div>
+          <div class="icons" id="icons-3">
+            <img id="pin" src="imgs/pin.png" alt="" /><img
+              src="imgs/face.png"
+              alt=""
+            /><img src="imgs/insta.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

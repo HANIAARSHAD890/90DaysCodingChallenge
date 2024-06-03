@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Text shadow</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .card {
+        color: rgb(51, 10, 10);
+        /* border:2px red solid ; */
+        margin: 23px 12px;
+        /* box-shadow:-10px -3px green;  */
+        /* box-shadow:7px 5px 19px green; */
+        /* box-shadow: 7px 5px 19px 6px rgba(158, 83, 17, 9000); */
+        /* box-shadow: inset 3px 5px 90px blue; */
+        box-shadow: 5px 9px 6px rgb(2, 1, 788), 9px 6px 9px rgb(107, 163, 0.1);
+        background-color: aqua;
+      }
+      .card h2 {
+        text-shadow: -3px -4px 5px rgb(98, 50, 139);   
+        /* when image pey text nahe dekh raha  */
+        /* background and dabay ka colour na nazar a raha ho ga  */
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <div class="card" id="card-1">
+          <h2>this is c++</h2>
+          <p>
+            this is c++ course that will continue till end Lorem ipsum dolor
+            sit, amet consectetur adipisicing elit. Minus asperiores nisi
+            exercitationem esse veritatis possimus obcaecati eligendi
+            perferendis dolorum et, neque dolorem officiis veniam pariatur
+            sapiente in voluptatibus. Minima odit omnis quos maiores dicta.
+          </p>
+        </div>
+        <div class="card" id="card-2">
+          <h2>this is html</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
+            asperiores nisi exercitationem esse veritatis possimus obcaecati
+            eligendi perferendis dolorum et, neque dolorem officiis veniam
+            pariatur sapiente in voluptatibus. Minima odit omnis quos maiores
+            dicta.
+          </p>
+        </div>
+        <div class="card" id="card-3">
+          <h2>card3</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
+            asperiores nisi exercitationem esse veritatis possimus obcaecati
+            eligendi perferendis dolorum et, neque dolorem officiis veniam
+            pariatur sapiente in voluptatibus. Minima odit omnis quos maiores
+            dicta.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

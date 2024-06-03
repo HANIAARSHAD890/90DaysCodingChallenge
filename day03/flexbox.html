@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felxbox tutorial</title>
+    <style>
+      .container{
+        height:544px;
+        width:100%;
+        border:2px solid rgb(104, 104, 160);
+        display:flex;
+        flex-direction: column;
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: row-reverse wrap; */
+        /* justify-content:space-between; */
+          /* align-items:stretch; */
+       
+        /* flex-direction:column; */
+      }
+      .item{
+       
+         height:200px;
+        width:200px;
+        background-color: aqua;
+        border:2px solid rgb(148, 105, 105);
+        padding:3px;
+        margin:3px;
+      }
+      #item-1{
+        /* order: 2;   */
+        /* flex-grow: 3; */
+        flex-basis:120px
+        /* flex shrink works revers e to the flex grow  */
+        /* order is like z-index */
+      }
+      #item-2{
+        /* flex-basis */
+        align-self: flex-end;
+        align-self: flex-start;
+        align-self: center;
+        /* last property he overrite hote hai  */
+        /* ;s: 320px; */
+        /* order:-1;
+        flex-grow:1 */
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>this is flexbox</h1>
+      <div class="container">
+        <div class="item" id="item-1">First</div>
+      <div class="item" id="item-2">Second</div>
+      <div class="item" id="item-3">Third</div>
+      <div class="item" id="item-4">Fourth</div>
+      <div class="item" id="item-5">Fifth</div>
+      <div class="item" id="item-6">Sixth</div>
+      </div>
+      
+    </main>
+    <footer></footer>
+  </body>
+</html>
