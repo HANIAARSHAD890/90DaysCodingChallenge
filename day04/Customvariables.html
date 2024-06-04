@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CustomerVariables</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      :root {
+        --primary-color: rgb(118, 118, 235);
+        --secondary-color: rgb(198, 99, 99);
+        --danger-color: rgba(8, 9, 0, 7);
+        --maxw: 600px;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: var(--primary-color);
+        box-shadow: 3px 3px var(--secondary-color);
+        padding: 5px;
+        margin: 5px;
+        border: 2px solid rgb(251, 126, 104);
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      .container {
+        margin: auto;
+        max-width: var(--maxw);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--danger-color);
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <body>
+      <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+      </div>
+    </body>
+    <footer></footer>
+  </body>
+</html>

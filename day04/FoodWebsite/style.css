@@ -1,0 +1,229 @@
+*{margin:0px;
+padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+:root{
+    --navbar-height:60px;
+    --primary-color:rgb(237, 200, 200);
+}
+/* NAVIGATION BAR */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+/* Logo and img */
+#logo{
+margin:12px ;
+}
+#logo img{
+    width:120px;
+    /* height:90px; */
+
+}
+/* List styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    text-decoration: none;
+    list-style: none;
+}
+#navbar ul li a:hover{
+color:rgb(44, 44, 73);
+cursor: pointer;
+}
+#navbar ul li a{
+    color:var(--primary-color);
+    text-decoration: none;
+    padding: 15px;
+    margin:5px;
+}
+#navbar::before{
+    content:"";
+    height:100%;
+    width:100vw;
+    background-color: rgb(174, 156, 129);
+    position: absolute;
+    z-index: -1;
+    opacity: 89999;
+
+}
+/* HOME SECTION */
+#home
+{
+    display: flex;
+    
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 628px;
+    /* background-image: url(imgs/cafe.jpg); */
+}
+#home::before{
+    content:"";
+    height:100%;
+    margin-top: 0px;
+    width:100%;
+    position:absolute;
+    z-index: -1;
+    background:url(imgs/cafe.jpg) no-repeat;
+    opacity: 0.89;
+} 
+
+/* SERVICESCENTER */
+#services{
+    margin:34px;
+    display: flex;
+   
+}
+#services .box{
+   background-color: rgb(247, 246, 232);
+    padding:34px;
+    margin:3px 6px;
+    border-radius: 16px;
+    border:2px solid rgb(85, 70, 70) ;
+    box-shadow: inset 90px 2px 2px  rgb(174, 156, 129); 
+
+}
+    
+#services .box img{
+    height:160px;
+    margin: auto;
+    display: block;
+}
+#client-section
+{
+   
+    height:344px;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url(imgs/shopCake.webp) no-repeat;
+    width:100vw;
+    height:65vh;
+    z-index:-1;
+    opacity:0.90;
+}
+
+#clients
+{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height:124px;
+}
+
+.client-item{
+    padding:40px 50px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    z-index:-1;
+    opacity:0.2;
+    background:url(imgs/contact.jpg) no-repeat center center/cover;
+    
+   
+
+}
+/* UTILITY CLASSES */
+.h-primary{
+font-size:3.8rem;
+padding: 12px;
+ font-family: "Dancing Script", "cursive";
+        font-optical-sizing: auto;
+        font-weight: 45;
+        font-style: normal;
+        background-color: rgb(174, 156, 129);
+        color: rgb(60, 15, 7);
+        border-radius: 12px;
+        box-shadow: inset 2px 4px rgb(63, 39, 39);
+        text-shadow: 2px 4px 5px  rgb(59, 48, 48);
+
+}
+.h-secondary{
+    font-size:2.8rem;
+padding: 12px;
+ font-family: "Dancing Script", "cursive";
+        font-optical-sizing: auto;
+        font-weight: 45;
+        font-size: 2.8rem;
+        font-style: normal;
+}
+.center{
+text-align: center;
+}
+#home h1{
+     font-family: "Dancing Script", "cursive";
+        font-optical-sizing: auto;
+        font-weight: 45;
+        margin: 13px;
+        font-size: 2.8rem;
+        font-style: normal;
+        background-color: rgb(174, 156, 129);
+        color: rgb(60, 15, 7);
+        border-radius: 12px;
+        box-shadow: inset 2px 4px rgb(63, 39, 39);
+        text-shadow: 2px 4px 5px  rgb(59, 48, 48);
+}
+.btn {
+    padding:15px 20px ;
+    border :2px solid rgb(47, 42, 42);
+    border-radius: 12px;
+    margin: 17px;
+    background-color: rgb(174, 156, 129);
+    font-size: 20px;
+    font-family: "Dancing Script", "cursive";
+    color:white;
+
+}
+.btn:hover {      background-color:  rgb(71, 45, 45);
+      color:rgb(6, 5, 5)
+      ;cursor: pointer;
+}
+#home p{
+    font-size: 18px;
+}
+.main
+{
+    background-color: black;
+}
+footer{
+   background-color: rgb(174, 156, 129);
+   color: rgb(60, 15, 7);
+   padding:9px 20px;
+   margin-top: 0px;
+
+}
+#contact-box input,#contact-box textarea{
+ width:100%;
+ padding:0.5rem;
+  font-size: 1.4rem;
+    font-family: "Dancing Script", "cursive";
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:555px;
+}
+#contact-box form{
+    margin-top: 20px;
+     font-family: "Dancing Script", "cursive";
+    width:40%;
+    font-size: 1.4rem;
+}

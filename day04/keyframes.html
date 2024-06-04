@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animatiosn and keyframes</title>
+    <style>
+      .container {
+        display: flex;
+        background-color: rgb(221, 248, 168);
+      }
+      .box {
+        background-color: rgb(119, 197, 119);
+        width: 250px;
+        height: 250px;
+        position: relative;
+        /* animation-name: hania-1;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: alternate;
+        animation-timing-function: ease-in-out; */
+        /* animation-delay: 3s; */
+        animation-direction:reverse;
+        animation-name: hans-1;
+        animation:hania-1 7s ease-in-out 2s 3 backwards;
+      }
+      @keyframes hania-1 {
+        from {
+          width: 200px;
+        }
+        to {
+          width: 1400px;
+        }
+      }
+      @keyframes hans-1 {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          top: 250px;
+          left: 0px;
+        }
+        75% {
+          top: 250px;
+          left: 250px;
+        }
+        100% {
+          top: 0px;
+          left:250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container"><div class="box">this is a box</div></div>
+    </main>
+  </body>
+</html>
