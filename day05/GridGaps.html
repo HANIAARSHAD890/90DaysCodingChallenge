@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Row Gaps</title>
+    <style>
+        .box{
+            background-color: #769289;
+            border: 2px solid rgb(242, 157, 157);
+        }
+        .grid{
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 3fr;
+            grid-template-columns:repeat(3,2fr);
+            grid-gap: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main><div class="grid">
+        <div class="box">this is a box-1</div>
+        <div class="box">this is a box-2</div>
+        <div class="box">this is a box-3</div>
+        <div class="box">this is a box-4</div>
+        <div class="box">this is a box-5</div>
+        <div class="box">this is a box-6</div>
+        <div class="box">this is a box-7</div>
+        <div class="box">this is a box-8</div>
+        <div class="box">this is a box-9</div>
+        <div class="box">this is a box-10</div>
+    </div></main>
+    <footer></footer>
+</body>
+</html>

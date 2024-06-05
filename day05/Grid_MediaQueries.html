@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid MediaQueries</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      /* .box {
+        background-color: aqua;
+        color: rgb(7, 64, 15);
+        text-align: center;
+        display: none;
+      } */
+      @media only screen and (max-width: 300px) {
+        body {
+          display: block;
+          background-color: rgb(242, 162, 162);
+        }
+        .container {
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+        span {
+          display: block;
+          text-align: center;
+        }
+        aside {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 500px) and (min-width: 300px) {
+        body {
+          display: block;
+          background-color: rgb(134, 134, 229);
+        }
+        .container {
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+        aside {
+          display: none;
+        }
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+      @media only screen and (min-width: 500px) and (max-width: 800px) {
+        body {
+          display: block;
+          background-color: rgb(182, 251, 167);
+        }
+        .container {
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+      @media only screen and (min-width: 800px) {
+        body {
+          display: block;
+          background-color: rgb(237, 152, 199);
+        }
+        span {
+          padding: 5px;
+          margin: 5px;
+        }
+      }
+      .bdr {
+        border: 2px solid black;
+        background-color: rgb(231, 220, 243);
+      }
+      nav {
+        grid-area: navbar;
+      }
+      footer {
+        grid-area: footer;
+      }
+      aside {
+        grid-area: aside;
+      }
+      section {
+        grid-area: section;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <nav class="bdr">
+          <span>Home</span>
+          <span>About</span>
+          <span>Contact</span>
+          <span>Email</span>
+        </nav>
+        <section class="bdr">
+          <h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+            doloribus obcaecati, inventore cum quia recusandae alias aliquam a
+            corrupti eum porro nostrum illum itaque, magnam maxime labore earum
+            atque aliquid minus consequatur dolores totam modi! Nesciunt illo,
+          </h2>
+        </section>
+        <aside class="bdr"><h1>More about Us</h1></aside>
+      </div>
+    </main>
+    <footer class="bdr">Copy right &copy; CodewithHans 2024</footer>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Template Areas</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      .item {
+        background-color: aqua;
+        border: 3px solid rgb(91, 71, 71);
+        border-radius: 12px;
+        box-shadow: 34px 5px 5px 5px rgb(164, 164, 234);
+        text-align: center;
+        justify-content: center;
+      }
+      #navbar {
+        grid-area: navbar;
+      }
+      #section {
+        grid-area: section;
+      }
+      #aside {
+        grid-area: aside;
+      }
+      .footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <div id="navbar" class="item">home About contact us</div>
+        <div id="section" class="item">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+          quos aspernatur accusamus culpa expedita ea tenetur quis, vitae
+          deserunt, beatae odio! Amet, animi. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Perferendis architecto minima fugiat,
+          non repellat neque. Rerum aliquam iusto mollitia dolore eveniet
+          consectetur odio nostrum ullam culpa adipisci, est temporibus quidem
+          omnis sint neque quis veniam! Aperiam delectus maxime itaque earum
+          fugiat, repudiandae et dolor veniam molestias quidem praesentium
+          mollitia ipsam cumque placeat tempora eaque velit voluptatum accusamus
+          consequatur totam ipsa voluptatem odio? Officia dolore quos fuga
+          consequatur cupiditate quo dolorem nihil voluptate officiis laudantium
+          amet, quibusdam accusantium alias quod mollitia odio vel in vitae vero
+          laboriosam numquam asperiores commodi. Consectetur, quas iste. Esse
+          molestiae, delectus eum tenetur excepturi similique suscipit in illo
+          odit dicta mollitia! Consequatur mollitia eaque hic laborum
+          laboriosam. Ipsa adipisci exercitationem laudantium consequuntur
+          repudiandae praesentium eos odit.
+        </div>
+        <div id="aside" class="item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iusto
+          illo minus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Ut adipisci voluptatum culpa assumenda et hic accusamus aspernatur
+          soluta, expedita asperiores amet odit rerum excepturi cum consectetur
+          exercitationem maiores perspiciatis deserunt. Asperiores provident
+          vero temporibus culpa maiores eos at fugit aliquam pariatur, eaque
+          beatae ipsam natus veniam autem numquam labore laborum porro libero?
+          voluptates, ex itaque, praesentium sapiente! Iste, voluptatum
+          distinctio fugit amet quae veniam?
+        </div>
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+         <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div> -->
+      </div>
+    </main>
+    <footer class="item">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem optio
+      enim veniam error quos, unde tempora est voluptate rerum, corrupti
+      dignissimos! Laborum delectus rem ratione ipsam unde iure dolore deleniti
+      id consequatur molestias quidem nobis labore repellat aliquid
+      exercitationem sint, quibusdam est sunt a ipsa!
+    </footer>
+  </body>
+</html>
