@@ -51,13 +51,25 @@
         cursor: pointer;
         transition: all 1s ease-in-out;
         transform: scale(1.3);
+        color: black;
       }
       #navbar {
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 1s ease-in-out 0.1s;
+        transition: transform 0.5s ease-in-out;
       }
+      #navbar:hover {
+        color: black;
+      }
+      #midnav {
+        transition: all 0.5s ease-in-out;
+      }
+      #midnav:hover {
+        color: black;
+        background-color: rgb(135, 128, 122);
+      }
+
       #topnav p {
         display: inline-block;
         padding: 12px;
@@ -70,10 +82,38 @@
         align-items: center;
         justify-content: center;
         background-color: rgb(236, 212, 181);
+        animation-direction: reverse;
+        /* animation-name: hans-1;
+        animation: hania-1 7s ease-in-out 2s 3 backwards; */
       }
+      /* @keyframes hania-1 {
+        from {
+          margin-right: 20;
+        }
+        to {
+          margin-right: 9000;
+        }
+      } */
+      /* @keyframes hans-1 {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          top: 250px;
+          left: 0px;
+        }
+        75% {
+          top: 250px;
+          left: 250px;
+        }
+        100% {
+          top: 0px;
+          left: 250px;
+        }
+      } */
       /* naviconns */
       .navicons {
-
         padding: 12px;
         margin: 5px;
         text-align: center;
@@ -95,8 +135,7 @@
         margin: 5px 5px 0px 50px;
       }
       header {
-        background: url("imgs/bg.png")
-          no-repeat left center/cover;
+        background: url("imgs/bg.png") no-repeat left center/cover;
 
         width: 100vw;
         height: 500px;
@@ -123,6 +162,54 @@
         transition: all 1s ease-in-out;
         cursor: pointer;
       }
+      #img {
+        display: block;
+      }
+      #img img {
+        width: 50px;
+        position: -webkit-sticky;
+      }
+      #img img:hover {
+        cursor: pointer;
+      }
+      .middle {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        margin: 20px;
+      }
+      .item {
+        color: black;
+        text-align: center;
+        justify-content: center;
+      }
+      #middleunder {
+        display: grid;
+        background-color: rgb(236, 212, 181);
+        width: 100vw;
+        grid-template-columns: 1.5fr 1fr;
+
+      }
+      .middleunderItem {
+        width: 30vw;
+        height: 500px;
+      }
+      .middleunderItem img {
+        width: 700px;
+        height: 550px;
+      }
+      #middleunderPara {
+        text-align: right;
+        justify-content: center;
+        margin: auto;
+        width: 35%;
+        margin-top: 50px;
+  
+      }
+      .middleunderItem h1 {
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -134,29 +221,62 @@
         <p>CUPCAKES AVAILABLE</p>
         <p>DELIVERY IN LAHORE AND KARACHI</p>
       </div>
-      <div id="icons">
-        <div class="navicons" id="icons-1">
-          <img id="sbar" src="imgs/searchbar.png" alt="" />
+      <div id="midnav">
+        <div id="icons">
+          <div class="navicons" id="icons-1">
+            <img id="sbar" src="imgs/searchbar.png" alt="" />
+          </div>
+          <div class="navicons" id="icons-2">
+            <h1 class="stylishH">House Of Flowers</h1>
+          </div>
+          <div class="navicons" id="icons-3">
+            <img src="imgs/cart.png" alt="" />
+          </div>
         </div>
-        <div class="navicons" id="icons-2">
-          <h1 class="stylishH">House Of Flowers</h1>
-        </div>
-        <div class="navicons" id="icons-3">
-          <img src="imgs/cart.png" alt="" />
-        </div>
+        <nav id="navbar">
+          <a href="">ALL</a><a href="">BOUQUETS</a><a href="">CUPCAKES</a
+          ><a href="">FLOWERS</a><a href="">JWELLERY</a><a href="">OCCASIONS</a>
+        </nav>
       </div>
-      <nav id="navbar">
-        <a href="">ALL</a><a href="">BOUQUETS</a><a href="">CUPCAKES</a
-        ><a href="">FLOWERS</a><a href="">JWELLERY</a><a href="">OCCASIONS</a>
-      </nav>
+
       <div class="downnav">
         <div id="downnavItems" id="Items-1">
           <h1 class="stylishH">A Father's love</h1>
           <p>CELEBRATE FATHERS DAY ON 16 JUNE</p>
         </div>
       </div>
+      <div id="img">
+        <img id="whatsappicon" src="imgs/whatsapp.png" alt="" />
+      </div>
     </header>
-    <main></main>
+    <main>
+      <div class="middle">
+        <h1 class="item stylishH">Our Story</h1>
+        <p class="item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+          libero at optio provident alias eum unde corrupti dignissimos magnam
+          corporis eius dicta tempora repellendus, amet ducimus vel enim, quam
+          laudantium doloremque incidunt quis non.
+        </p>
+      </div>
+      <div id="middleunder">
+        <div class="middleunderItem">
+          <img
+            src="https://www.desktopbackground.org/download/1440x900/2012/08/14/436607_pink-bouquet-flowers-wallpapers-hd-of-beautiful-flowers_2560x1600_h.jpg"
+            alt="pinkflowers"
+          />
+        </div>
+        <div class="middleunderItem" id="middleunderPara">
+          <h1 class="stylishH">HOUSE OF FLOWERS</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla,
+            repellat eum, autem harum odio dignissimos libero amet at laborum
+            optio, magnam sapiente dicta repellendus. Quasi, architecto
+            blanditiis voluptatibus modi aut nam! Magnam, tempora illo? s
+          </p>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
