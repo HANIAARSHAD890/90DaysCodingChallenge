@@ -1,0 +1,98 @@
+#HButton{
+    display: block;
+    display: inline-block;
+    border-radius: 60px;
+    background-color: rgb(117, 233, 117);
+    color: black;
+
+}
+#HButton:hover{
+background-color: aliceblue;
+}
+#underNavHr{
+    margin-top: 0px;
+}
+.HLine{
+    color:black;
+    font-size: medium;
+}
+#InputText{
+    width:500px;
+    margin-bottom: 8px;
+}
+#BgBlue
+{
+    background: url('https://rare-gallery.com/uploads/posts/1124070-sunlight-abstract-sky-blue-horizon-circle-atmosphere-lens-flare-wave-line-screenshot-computer-wallpaper-atmosphere-of-earth-outer-space-astronomical-object.jpg') no-repeat center center/cover;
+    opacity: 0.9;
+}
+#BlackCheck:hover{
+    background-color:white;
+    color: black;
+}
+.Hcontainer{
+    display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "Midtext Midtext Midundertext Midundertext";
+}
+.item{
+        text-align: center;
+        justify-content: center;
+        width:450px
+}
+#Midundertext img{
+    width:120px;
+}
+#Midundertext{
+    grid-area: Midundertext;
+}
+#Midtext{
+    grid-area: Midtext;
+}
+#btn-learn{
+grid-area: btn-learn;
+}
+#btn-support{
+grid-area: btn-support;
+}
+#ButtonsH
+{
+    display: grid;
+        grid-gap: 1rem;
+    grid-template-areas: btn-learn  btn-support;
+}
+#Bottomdiv{
+    height:500px;
+    margin-top:7px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://www.desktopbackground.org/download/1600x900/2015/09/05/1006168_green-backgrounds-892e-backgrounds-amazing-wallnyoi-com_1920x1200_h.jpg') no-repeat center center/cover;
+    z-index: -1;
+}#BottomdivHeading{
+    padding-top:150px ;
+}
+#bottomimg{
+    height:500px;
+    width:550px
+}
+#Supporterimg img
+{
+    width:90px;
+   margin: auto;
+}
+#Supporterimg{
+width: 100vw;
+margin: auto;
+}
+#psupporter{
+    text-decoration-line:underline;
+    width:500px;
+    margin: auto;
+   
+}
+#psupporter:hover{
+background-color: black;
+cursor: pointer;
+color: white;
+}
